@@ -17,7 +17,7 @@ def check_price():
     fprice=float(cprice[0]+cprice[1])
     print(title.strip())
     print(fprice)
-    if fprice>1000:
+    if fprice<1000:
         send_mail()
 
 def send_mail():
